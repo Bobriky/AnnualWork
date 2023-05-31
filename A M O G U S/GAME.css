@@ -45,11 +45,14 @@ header{
     width: 85%;
     margin: 0 auto;
 }
+header img{
+    width: 3rem;
+    margin-right: 100%;
+}
 main{
     width: 80%;
     background-color: var(--eerie-black);
     display: grid;
-    grid-template-columns: 45% 55%;
     margin: 0 auto;
 }
 footer{
@@ -64,8 +67,4 @@ footer{
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-}
-header img{
-    width: 3rem;
-    margin-right: 100%;
 }
