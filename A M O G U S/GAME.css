@@ -31,7 +31,7 @@ body{
     min-height: 100vh;
     margin: 0 auto;
     display: grid;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 8% 84% 8%;
     color: var(--white-smoke);
 }
 header{
@@ -78,8 +78,8 @@ main{
     margin: 0 auto;
     text-align: center;
     background-color: var(--transculent-gray);
-    border-radius: 0 0 1rem 1rem;
-    padding: 0.3rem 1rem 1rem 1rem;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
 }
 .slogan p span{
     color: var(--cornell-red-2);
@@ -116,21 +116,56 @@ main{
 .red{
     color: var(--cornell-red);
 }
-
-.maps{
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     width: 95%;
     margin: 0 auto;
+    gap: 1rem;
+}
+.maps{
     background-color: var(--transculent-gray);
     padding: 0.5rem;
     border-radius: 0.5rem;
+    font-family: 'Righteous', cursive;
+    text-align: center;
 }
-a{
-    color: var(--silver);
+.maps a img{
+    width: 75%;
+    display: block;
+    margin: 1.5rem auto;
 }
-
+.maps h2{
+    margin-bottom: 0.6rem;
+    text-align: center;
+}
+.maps p{
+    margin-bottom: 1rem;
+}
+.roles{
+    background-color: var(--transculent-gray);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-family: 'Righteous', cursive;
+    line-height: 1.6rem;
+    text-align: center;
+}
+.roles h2{
+    margin-bottom: 0.6rem;
+}
+.role{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.role-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.roles div img{
+    width: 20%;
+}
 footer{
     background-color: var(--cornell-red);
     border-radius: 2rem 2rem 0 0;
@@ -143,4 +178,5 @@ footer{
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    font-family: 'Righteous', cursive;
 }

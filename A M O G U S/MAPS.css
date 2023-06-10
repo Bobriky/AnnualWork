@@ -74,6 +74,7 @@ h1 pre{
     gap: 3rem;
     height: 95%;
     margin: 1rem 0 1rem 0 ;
+    position: relative;
 }
 .grid-item{
     position: relative;
@@ -81,11 +82,20 @@ h1 pre{
     align-items: center;
     justify-content:flex-end;
     flex-direction: column;
-    background-color: rgba(39, 39, 39, 1);
+    background-color: var(--eerie-black);
     border: solid var(--cornell-red) 0.6rem;
     border-radius: 0.5rem;
     padding: 0 4rem 1rem 4rem;
-    box-shadow: -10px -10px 5px var(--silver);
+}
+.grid-item::before{
+    box-shadow: 0px 0px 12rem var(--silver);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 .grid-item img{
     object-fit: cover;
@@ -95,12 +105,14 @@ h1 pre{
 .grid-item-name{
     position: absolute;
     top: -40px;
-    left: 30%;
-    background-color: rgba(73, 73, 73, 0.8);
-    border: solid var(--eerie-black) 0.6rem;
+    left: 5%;
+    background-color: rgba(73, 73, 73, 0.9);
+    border: solid var(--cornell-red) 0.6rem;
     border-radius: 0.5rem;
     padding: 0.5rem;
-
+}
+.right-alligned{
+    left: 60%;
 }
 .grid-item-name img{
     object-fit: cover;
