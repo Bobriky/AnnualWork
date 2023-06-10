@@ -7,7 +7,7 @@ font-family: 'Righteous', cursive;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--wheat);
+    color: var(--white-smoke);
     font-family: 'Righteous', cursive;
 }
 :root{
@@ -107,6 +107,7 @@ header img{
 h1{
     width: 100%;
     text-align: center;
+    margin-right: 3rem;
 }
 header img:hover {
     animation: spin-once 0.4s forwards;
