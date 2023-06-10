@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Righteous&display=swap');
+/*
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Righteous', cursive;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --night: #0b090aff;
+    --eerie-black: #161a1dff;
+    --transculent-gray: #3e3e3e38;
+    --blood-red: #660708ff;
+    --cornell-red: #a4161aff;
+    --cornell-red-2: #ba181bff;
+    --imperial-red: #e5383bff;
+    --silver: #b1a7a6ff;
+    --timberwolf: #d3d3d3ff;
+    --white-smoke: #f5f3f4ff;
+    --white: #ffffffff;
+}
+body{
+    background-image: url(Images/AMOGUS_BC.jpg);
+    background-size: contain;
+    object-fit: cover;
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 8% 92%;
+    color: var(--white-smoke);
+}
+main{
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cornell-red-2);
+    border-radius: 0 0 2rem 2rem;
+    border: 0.4rem solid var(--eerie-black);
+    border-top: none;
+    padding: 1rem;
+    width: 30%;
+    margin: 0 auto;
+}
+header img{
+    width: 3rem;
+    margin-right: auto;
+}
+header nav img:hover {
+    animation: spin-once 0.4s forwards;
+}
+@keyframes spin-once {
+    0% {
+        transform: rotate(0deg);}
+    100% {
+        transform: rotate(360deg);}
+}
+h1{
+    width: 100%;
+    text-align: center;
+    margin-right: 3rem;
+}
+h1 pre{
+    font-family: 'Righteous', cursive;
+}
+.grid-container{
+    display: grid;
+    grid-template: 1fr 1fr /1fr 1fr;
+    gap: 3rem;
+    height: 95%;
+    margin: 1rem 0 1rem 0 ;
+}
+.grid-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    flex-direction: column;
+    background-color: rgba(39, 39, 39, 1);
+    border: solid var(--cornell-red) 0.6rem;
+    border-radius: 0.5rem;
+    padding: 0 4rem 1rem 4rem;
+    box-shadow: -10px -10px 5px var(--silver);
+}
+.grid-item img{
+    object-fit: cover;
+    width: 95%;
+    height: 95%;
+}
+.grid-item-name{
+    position: absolute;
+    top: -40px;
+    left: 30%;
+    background-color: rgba(73, 73, 73, 0.8);
+    border: solid var(--eerie-black) 0.6rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+
+}
+.grid-item-name img{
+    object-fit: cover;
+    width: 200px;
+}
