@@ -71,6 +71,7 @@ main{
     width: 80%;
     background-color: var(--eerie-black);
     margin: 0 auto;
+    padding: 0.6rem 1rem;
 }
 .slogan{
     font-family: 'Righteous', cursive;
@@ -90,7 +91,6 @@ main{
 .about-part{
     display: flex;
     flex-direction: row;
-    width: 95%;
     background-color: var(--transculent-gray);
     padding: 0.5rem;
     border-radius: 0.5rem;
@@ -119,8 +119,7 @@ main{
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    width: 95%;
-    margin: 0 auto;
+    margin: 1rem auto;
     gap: 1rem;
 }
 .maps{
@@ -133,14 +132,11 @@ main{
 .maps a img{
     width: 75%;
     display: block;
-    margin: 1.5rem auto;
+    margin: 1rem auto;
 }
 .maps h2{
     margin-bottom: 0.6rem;
     text-align: center;
-}
-.maps p{
-    margin-bottom: 1rem;
 }
 .roles{
     background-color: var(--transculent-gray);
@@ -157,14 +153,38 @@ main{
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-align: left;
+    gap: 0.5rem;
 }
 .role-reverse{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    text-align: right;
+    gap: 0.5rem;
 }
 .roles div img{
     width: 20%;
+}
+
+.benefits{
+    background-color: var(--transculent-gray);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-family: 'Righteous', cursive;
+    line-height: 1.6rem;
+    text-align: center;
+}
+.benefits h2{
+    margin-bottom: 1rem;
+}
+.benefits ul li{
+    list-style-type: none;
+    margin-bottom: 1.2rem;
+}
+.benefits ul li a{
+    color: var(--silver);
+    text-decoration: none;
 }
 footer{
     background-color: var(--cornell-red);

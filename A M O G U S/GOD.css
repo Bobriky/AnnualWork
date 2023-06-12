@@ -1,12 +1,162 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Righteous&display=swap');
 /*
-font-family: 'Dongle', sans-serif;
-font-family: 'Righteous', cursive;
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Righteous', cursive;
 */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--wheat);
+}
+:root{
+    --night: #0b090aff;
+    --eerie-black: #161a1dff;
+    --transculent-gray: #3e3e3e38;
+    --blood-red: #660708ff;
+    --cornell-red: #a4161aff;
+    --cornell-red-2: #ba181bff;
+    --imperial-red: #e5383bff;
+    --silver: #b1a7a6ff;
+    --timberwolf: #d3d3d3ff;
+    --white-smoke: #f5f3f4ff;
+    --white: #ffffffff;
+    --wheat: #f5deb3;
+    --gold: #e9a01a;
+}
+body{
+    background-image: url(Images/AMOGUS_BC.jpg);
+    background-size: contain;
+    object-fit: cover;
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 8% 84% 8%;
+    color: var(--white-smoke);
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cornell-red-2);
+    border-radius: 0 0 2rem 2rem;
+    border: 0.4rem solid var(--eerie-black);
+    border-top: none;
+    padding: 1rem;
+    width: 85%;
+    margin: 0 auto;
+}
+header img{
+    width: 3rem;
+    margin-right: auto;
+}
+h1{
+    width: 100%;
+    text-align: center;
+    margin-right: 3rem;
+}
+h1 pre{
+    font-family: 'Righteous', cursive;
+}
+header nav img:hover {
+    animation: spin-once 0.4s forwards;
+}
+@keyframes spin-once {
+    0% {
+        transform: rotate(0deg);}
+    100% {
+        transform: rotate(360deg);}
+}
+main{
+    width: 80%;
+    background-color: var(--eerie-black);
+    margin: 0 auto;
+    padding: 0.6rem 1rem;
+    font-family: 'Righteous', cursive;
+    display: grid;
+    grid-template-columns: 53% 47%;
+}
+.sus{
+    color: var(--cornell-red);
+}
+.list{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+}
+.list div{
+    width: auto;
+    background-color: var(--gold);
+    border: solid 0.4rem var(--night);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.25rem;
+
+}
+.list div:hover{
+    box-shadow: 0 0 2.5rem var(--timberwolf);
+}
+.god{
+    background-color: var(--transculent-gray);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+.god p{
+    line-height: 1.2rem;
+    text-align: justify;
+}
+.god img{
+    width: 15%;
+    float: left;
+    margin: 0 0.5rem 0.5rem 0;
+}
+.powers{
+    background-color: var(--transculent-gray);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    line-height: 1.2rem;
+}
+.powers p{
+    text-align: justify;
+}
+.powers img{
+    width: 30%;
+    float: right;
+    margin: 0 0 0.5rem 0.5rem;
+}
+.sussed{
+    background-color: var(--transculent-gray);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+.sussed p{
+    margin-bottom: 1rem;
+    line-height: 1rem;
+}
+.sussed ul li{
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+    line-height: 1rem;
+}
+.sussed img{
+    width: 20%;
+    float: left;
+    margin: 0 0.5rem 0.5rem 0;
+}
+footer{
+    background-color: var(--cornell-red);
+    border-radius: 2rem 2rem 0 0;
+    border: 0.4rem solid var(--eerie-black);
+    border-bottom: none;
+    padding: 1rem 2rem ;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
     font-family: 'Righteous', cursive;
 }
