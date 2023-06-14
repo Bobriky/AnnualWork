@@ -28,10 +28,9 @@ body{
     background-size: contain;
     object-fit: cover;
     max-width: 1440px;
-    min-height: 100vh;
     margin: 0 auto;
     display: grid;
-    grid-template-rows: 8% 84% 8%;
+    grid-template-rows: 2fr 21fr 2fr;
     color: var(--white-smoke);
 }
 header{
@@ -71,7 +70,9 @@ main{
     width: 80%;
     background-color: var(--eerie-black);
     margin: 0 auto;
-    padding: 0.6rem 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 0.7fr 2fr 3fr;
 }
 .slogan{
     font-family: 'Righteous', cursive;
@@ -81,11 +82,13 @@ main{
     background-color: var(--transculent-gray);
     border-radius: 1rem;
     padding: 0.5rem 1rem;
+    display: grid;
+    align-items: center;
 }
 .slogan p span{
     color: var(--cornell-red-2);
     display: block;
-    font-size: 2em;
+    font-size: 2rem;
     padding-bottom: 0.2rem;
 }
 .about-part{
@@ -119,7 +122,6 @@ main{
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    margin: 1rem auto;
     gap: 1rem;
 }
 .maps{
@@ -178,9 +180,12 @@ main{
 .benefits h2{
     margin-bottom: 1rem;
 }
+.benefits ul{
+    display: grid;
+    gap: 0.5rem;
+}
 .benefits ul li{
     list-style-type: none;
-    margin-bottom: 1.2rem;
 }
 .benefits ul li a{
     color: var(--silver);

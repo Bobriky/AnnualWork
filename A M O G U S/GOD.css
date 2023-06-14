@@ -28,10 +28,9 @@ body{
     background-size: contain;
     object-fit: cover;
     max-width: 1440px;
-    min-height: 100vh;
     margin: 0 auto;
     display: grid;
-    grid-template-rows: 8% 84% 8%;
+    grid-template-rows: 2fr 21fr 2fr;
     color: var(--white-smoke);
 }
 header{
@@ -79,9 +78,86 @@ main{
 .sus{
     color: var(--cornell-red);
 }
-.list{
-    display: flex;
+.left-side{
+    text-align: justify;
+}
+.god{
+    background-color: var(--transculent-gray);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    line-height: 1.2rem;
+}
+.god h1{
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+.god img{
+    width: 15%;
+    float: left;
+    margin: 0 0.5rem 0.5rem 0;
+}
+.powers{
+    background-color: var(--transculent-gray);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    line-height: 1.2rem;
+}
+.powers h1{
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+.powers img{
+    width: 30%;
+    float: right;
+    margin: 0 0 0.5rem 0.5rem;
+}
+.info{
+    background-color: var(--transculent-gray);
+    padding: 0.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.info img{
+    width: 20%;
+    float: left;
+    margin-right: 0.5rem;
+}
+.disease{
+    background-color: var(--transculent-gray);
+    padding: 0.5rem;
+    text-align: center;
+    margin: 0.3rem 0;
+}
+.disease ul{
+    margin-top: 0.5rem;
+    display: grid;
     justify-content: center;
+    grid-template-columns: 20% 20% 35%;
+    gap: 2rem;
+}
+.disease ul li{
+    list-style-type: none;
+    text-align: center;
+}
+.behavior{
+    background-color: var(--transculent-gray);
+    padding: 0.5rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+.behavior h3{
+    text-align: center;
+}
+.behavior p{
+    margin-bottom: 0.5rem;
+}
+.behavior p:first-of-type{
+    text-align: center;
+    margin-bottom: 0.5rem;
+}   
+.list{
+    min-height: 90%;
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
     font-size: 1.2em;
@@ -97,54 +173,6 @@ main{
 }
 .list div:hover{
     box-shadow: 0 0 2.5rem var(--timberwolf);
-}
-.god{
-    background-color: var(--transculent-gray);
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-}
-.god p{
-    line-height: 1.2rem;
-    text-align: justify;
-}
-.god img{
-    width: 15%;
-    float: left;
-    margin: 0 0.5rem 0.5rem 0;
-}
-.powers{
-    background-color: var(--transculent-gray);
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    margin-top: 0.5rem;
-    line-height: 1.2rem;
-}
-.powers p{
-    text-align: justify;
-}
-.powers img{
-    width: 30%;
-    float: right;
-    margin: 0 0 0.5rem 0.5rem;
-}
-.sussed{
-    background-color: var(--transculent-gray);
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-}
-.sussed p{
-    margin-bottom: 1rem;
-    line-height: 1rem;
-}
-.sussed ul li{
-    list-style-type: none;
-    margin-bottom: 0.5rem;
-    line-height: 1rem;
-}
-.sussed img{
-    width: 20%;
-    float: left;
-    margin: 0 0.5rem 0.5rem 0;
 }
 footer{
     background-color: var(--cornell-red);

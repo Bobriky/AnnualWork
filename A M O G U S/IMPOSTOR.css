@@ -7,7 +7,6 @@ font-family: 'Righteous', cursive;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--white-smoke);
     font-family: 'Righteous', cursive;
 }
 :root{
@@ -31,7 +30,8 @@ body{
     max-width: 1440px;
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 2fr 21fr 2fr;
+    color: var(--white-smoke);
 }
 header{
     display: flex;

@@ -28,10 +28,9 @@ body{
     background-size: contain;
     object-fit: cover;
     max-width: 1440px;
-    min-height: 100vh;
     margin: 0 auto;
     display: grid;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 2fr 21fr 2fr;
 }
 header{
     display: flex;
