@@ -1,27 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Righteous&display=swap');
-/*
-font-family: 'Dongle', sans-serif;
-font-family: 'Righteous', cursive;
-*/
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--white-smoke);
-    font-family: 'Righteous', cursive;
 }
 :root{
     --night: #0b090aff;
     --eerie-black: #161a1dff;
-    --blood-red: #660708ff;
     --cornell-red: #a4161aff;
-    --cornell-red-2: #ba181bff;
-    --imperial-red: #e5383bff;
     --silver: #b1a7a6ff;
-    --timberwolf: #d3d3d3ff;
     --white-smoke: #f5f3f4ff;
-    --white: #ffffffff;
-    --wheat: #f5deb3;
 }
 body{
     background-image: url(Images/AMOGUS_BC.jpg);
@@ -31,6 +19,7 @@ body{
     margin: 0 auto;
     display: grid;
     grid-template-rows: 2fr 21fr 2fr;
+    color: var(--white-smoke);
 }
 header{
     display: flex;
@@ -44,6 +33,9 @@ header{
     width: 60%;
     margin: 0 auto;
 }
+header h1 pre{
+    font-family: 'Righteous', cursive;
+}
 main{
     width: 80%;
     margin: auto;
@@ -53,18 +45,43 @@ nav{
     grid-template: 1fr 1fr / 1fr 1fr;
     gap: 2rem;
 }
+span{
+    font-size: 4rem;
+    line-height: 5rem;
+    text-align: center;
+    color: var(--white-smoke);
+    font-family: 'Righteous', cursive;
+}
+footer{
+    background-color: var(--cornell-red);
+    border-radius: 2rem 2rem 0 0;
+    border: 0.4rem solid var(--eerie-black);
+    border-bottom: none;
+    padding: 1rem 2rem ;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    color: var(--white-smoke);
+    font-family: 'Righteous', cursive;
+}
 .tab{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
     background-color: var(--night);
-    border: 0.2rem solid var(--blood-red);
+    border: 0.4rem solid var(--cornell-red);
     border-radius: 1rem;
     text-decoration: none;
     padding: 2rem;
+    transition: 1s ease-out
 }
 .tab:hover{
+    box-shadow: 0 0 3rem var(--silver);
+    transition: 0.05s;
     animation: shaking 0.5s infinite;
 }
 @keyframes shaking {
@@ -79,25 +96,7 @@ nav{
     100% {
       transform: rotate(0deg) translateX(-2px) translateY(-2px);}
 }
-span{
-    font-family: 'Dongle', sans-serif;
-    font-size: 5rem;
-    line-height: 5rem;
-    text-align: center;
-}
-footer{
-    background-color: var(--cornell-red);
-    border-radius: 2rem 2rem 0 0;
-    border: 0.4rem solid var(--eerie-black);
-    border-bottom: none;
-    padding: 1rem 2rem ;
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-}
+
 .HOME_button{
     position: absolute;
     top: 0;
