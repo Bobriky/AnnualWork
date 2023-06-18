@@ -128,4 +128,5 @@ footer{
     background-color: var(--eerie-black);
     opacity: 0.95;
     border-radius: 0.2rem;
+    font-family: 'Righteous', cursive;
 }
