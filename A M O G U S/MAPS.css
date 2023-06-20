@@ -6,7 +6,6 @@
 }
 :root{
     --eerie-black: #161a1dff;
-    --cornell-red: #a4161aff;
     --cornell-red-2: #ba181bff;
     --silver: #b1a7a6ff;
     --white-smoke: #f5f3f4ff;
@@ -38,7 +37,7 @@ header{
     margin: 0 auto;
 }
 header img{
-    width: 3rem;
+    width: 2.5  rem;
     margin-right: auto;
 }
 header nav img:hover {
@@ -73,7 +72,7 @@ h1 pre{
     justify-content:flex-end;
     flex-direction: column;
     background-color: var(--eerie-black);
-    border: solid var(--cornell-red) 0.6rem;
+    border: solid var(--cornell-red-2) 0.6rem;
     border-radius: 0.5rem;
     padding: 0 4rem 1rem 4rem;
 }
@@ -97,7 +96,7 @@ h1 pre{
     top: -40px;
     left: 5%;
     background-color: rgba(73, 73, 73, 0.9);
-    border: solid var(--cornell-red) 0.6rem;
+    border: solid var(--cornell-red-2) 0.6rem;
     border-radius: 0.5rem;
     padding: 0.5rem;
 }

@@ -7,7 +7,6 @@
 :root{
     --eerie-black: #161a1dff;
     --transculent-gray: #3e3e3e38;
-    --cornell-red: #a4161aff;
     --cornell-red-2: #ba181bff;
     --silver: #b1a7a6ff;
     --white-smoke: #f5f3f4ff;
@@ -106,7 +105,7 @@ main{
     margin-bottom: 0.5rem;
 }
 .red{
-    color: var(--cornell-red);
+    color: var(--cornell-red-2);
 }
 .grid-container{
     display: grid;
@@ -181,7 +180,7 @@ main{
     text-decoration: none;
 }
 footer{
-    background-color: var(--cornell-red);
+    background-color: var(--cornell-red-2);
     border-radius: 2rem 2rem 0 0;
     border: 0.4rem solid var(--eerie-black);
     border-bottom: none;

@@ -7,7 +7,7 @@
 :root{
     --night: #0b090aff;
     --eerie-black: #161a1dff;
-    --cornell-red: #a4161aff;
+    --cornell-red-2: #ba181bff;
     --silver: #b1a7a6ff;
     --white-smoke: #f5f3f4ff;
 }
@@ -25,7 +25,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--cornell-red);
+    background-color: var(--cornell-red-2);
     border-radius: 0 0 2rem 2rem;
     border: 0.4rem solid var(--eerie-black);
     border-top: none;
@@ -53,7 +53,7 @@ span{
     font-family: 'Righteous', cursive;
 }
 footer{
-    background-color: var(--cornell-red);
+    background-color: var(--cornell-red-2);
     border-radius: 2rem 2rem 0 0;
     border: 0.4rem solid var(--eerie-black);
     border-bottom: none;
@@ -73,7 +73,7 @@ footer{
     align-items: center;
     font-size: 2rem;
     background-color: var(--night);
-    border: 0.4rem solid var(--cornell-red);
+    border: 0.4rem solid var(--cornell-red-2);
     border-radius: 1rem;
     text-decoration: none;
     padding: 2rem;
